@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<table border="1">
+<tr th:each="team: ${teamList}">
+<td th:each="title: ${team}">
+<span th:text="${title}"></span></td>
+</tr>
+</table>
+
+</body>
+</html>

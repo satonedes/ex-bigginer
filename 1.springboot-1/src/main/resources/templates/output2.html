@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h2>ユーザ情報</h2><br>
+名前：<span th:text"${session.user.name}"></span><br>
+年齢：<span th:text"${session.user.age}"></span><br>
+コメント：<span th:text"${session.user.comment}"></span><br>
+<a href="output.html"
+	th:href="@{ex10/topage1}">
+to page1</a>
+</body>
+</html>
